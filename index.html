@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Alojamiento para vacaciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!---------------------------------------------------------------------- NAV BAR ---------------------------------------------------------------->
+
+    <div class="flex w-full px-20 py-6">
+        <div class="w-2/12">
+            <img src="img/logo.png" alt="logotipo">
+        </div>
+        <nav class="w-3/5">
+            <ul class="flex justify-center">
+                <li class="px-3"><a href="">Estancias</a></li>
+                <li class="px-3"><a href="">Experiencias</a></li>
+                <li class="px-3"><a href="">Experiencias en línea</a></li>
+            </ul>
+        </nav>
+        <div class="w-2/6 flex justify-between items-center">
+            <a href="#" >Pon tu casa en Airbnb</a>
+            <i class="fa-solid fa-globe"></i>
+            <div class="border border-sky-500 text-slate-500 rounded-full px-4 py-1 flex items-center justify-between hover:shadow-lg shadow-2xl shadow-cyan-500/50">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------------------------- BARRA DE BUSQUEDA ---------------------------------------------------------------->
+
+    <header class="px-80 border-b-2 pb-6">
+        <div class="border border-stone-500 rounded-full flex">
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Destino</label>
+                <input type="text" class="outline-none"placeholder= "Buscar destinos">
+            </div>
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Llegada</label>
+                <input type="date" class="outline-none"placeholder= "Agregar fecha">
+            </div>
+            <div class="px-8 py-4 w-1/4">
+                <label for="" class="block">Salida</label>
+                <input type="date" class="outline-none"placeholder= "Agregar fecha">
+            </div>
+            <div class="px-8 py-4 w-1/4 flex w-1/4">
+                <div class="w-3/4">
+
+                    <label for="" class="block w-full">Huéspedes</label>
+                    <input type="text" class="outline-none"placeholder= "¿Cúantos?">
+                </div>
+                    <div class="w-1/4">
+
+                        <button class="rounded-full bg-red-500 text-white px-5 py-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!---------------------------------------------------------------------- SECTION SELECTOR ---------------------------------------------------------------->
+
+
+    <section class="p-8 flex items-center">
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-house w-full text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Minicasas</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-house-flood-water text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Lagos</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-tree text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Parques nacionales</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-brands fa-fort-awesome text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Mansiones</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-golf-ball-tee text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Golf</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-house-flag text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Casa de campo</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            <i class="fa-solid fa-bed text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Habitaciones</small>
+        </div>
+        <div class="flex flex-wrap justify-center w-[10%] text-stone-500 hover:text-black cursor-pointer">
+            
+            <i class="fa-solid fa-umbrella-beach text-2xl"></i>
+            <small class="w-full text-center py-2 font-bold">Playa</small>
+        </div>
+        <button class="border rounded-lg  border-stone-500 px-4 py-2 mx-4 flex items-center"><i class="fa-solid fa-sliders"></i>Filtros</button>
+        <div class="border rounded-lg  border-stone-500 px-4 py-2">Impuestos<i class="fa-solid fa-toggle-on mx-2 text-center text-2xl"></i></div>
+    </section>
+
+
+    <!---------------------------------------------------------------------- GALERIA DE IMAGENES ---------------------------------------------------------------->
+
+
+    <section class="p-8 flex items-center justify-center">
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 p-2"></i>
+            <img class="rounded-lg size-96" src="img/avent.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>        
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$120.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/nature.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$110.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/lago.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$200.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/oceano.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>                 
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$250.00 <span class="font-normal">Noche  </span></small>
+        </div>
+    </section>
+    <section class="p-8 flex items-center justify-center">
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 p-2"></i>
+            <img class="rounded-lg size-96" src="img/avent.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>        
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$120.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/nature.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$110.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/lago.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$200.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/oceano.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>                 
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$250.00 <span class="font-normal">Noche  </span></small>
+        </div>
+    </section>
+    <section class="p-8 flex items-center justify-center">
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 p-2"></i>
+            <img class="rounded-lg size-96" src="img/avent.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>        
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$120.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/nature.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$110.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/lago.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$200.00 <span class="font-normal">Noche  </span></small>
+        </div>
+        <div class="m-2 relative ">
+            <i class="fa-regular fa-heart absolute right-0 text-white text-2xl hover:text-red-500 z-50 p-2"></i>
+            <img class="rounded-lg size-96" src="img/oceano.jpg" alt="naturaleza">
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Bosque, London</h3>
+                <span>
+                    <i class="fa-solid fa-star"></i>4.5
+                </span>                 
+            </div>
+            <p class="text-stone-500">Bosque vacacional familiar</p>
+            <small class="font-bold text-md">$250.00 <span class="font-normal">Noche  </span></small>
+        </div>
+    </section>
+
+
+    <!---------------------------------------------------------------------- MAP---------------------------------------------------------------->
+
+
+    <div class="fixed bottom-8 right-0 left-0 text-center z-50">
+        <button class="text-white bg-zinc-800 p-2 text-lg rounded-full">Ver en el mapa <i class="fa-solid fa-map"></i></button>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+
+</body>
+</html>
